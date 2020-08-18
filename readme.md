@@ -8,5 +8,11 @@ This project aims at combine YoloV5 && Yolact into to a Instance Segmentation mo
 
 2). Using Yolov5 output boxes, and Yolact output mask coefficient, will it works OK?
 
+Project status:
+
+- [x] Yolact worked;
+- [ ] YoloV5 inference code integrate;
+- [ ] Apply Yolo detect layer branch onto Yolact ProtoNet and Prediction Module.
+
 
 

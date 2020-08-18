@@ -37,7 +37,7 @@ parser.add_argument('--video', default=None, type=str,
                     help='The path of the video to evaluate. Pass a number to use the related webcam.')
 parser.add_argument('--real_time', default=True, action='store_true',
                     help='Show the detection results real-timely.')
-parser.add_argument('--visual_thre', default=0.3, type=float,
+parser.add_argument('--visual_thre', default=0.2, type=float,
                     help='Detections with a score under this threshold will be removed.')
 
 args = parser.parse_args()
@@ -113,7 +113,7 @@ with torch.no_grad():
         i = 0
         while True:
             res, frame = vid.read()
-            
+
             if res:
                 frame_origin = torch.from_numpy(frame).float()
                 if cuda:
